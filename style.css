@@ -10,8 +10,6 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -2;
-    margin-top: -60px;
 }
 
 .darkOverlay {
@@ -21,8 +19,8 @@ section {
     background-color: black;
     height: 100%;
     width: 100%;
-    opacity: 0.7;
-    z-index: -1;
+    opacity: 0.8;
+    z-index: 1;
 }
 
 .tekstContainerDarkOverlay {
@@ -32,6 +30,7 @@ section {
     transform: translate(-50%, -50%);
     margin: 0 auto;
     text-align: center;
+    z-index: 2;
 }
 
 .tekstContainerDarkOverlay h1 {
@@ -72,12 +71,6 @@ section {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0%);
-}
-
-@media (prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
 }
 
 @media (max-width: 768px) {
