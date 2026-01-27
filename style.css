@@ -1,11 +1,12 @@
 /*topbar*/
 body {
     overflow-x: hidden;
+    background-color: rgb(36, 36, 36);
 }
 .topbar {
     height: auto;
     padding: 5px;
-    background: #0f88ad;
+    background-color: #0f88ad;
     color: white;
     display: flex;
     align-items: center;
@@ -59,8 +60,8 @@ section {
     padding-top: clamp(50px, 7vw, 90px);
     padding-left: clamp(4px, 10vw, 200px);
     padding-right: clamp(4px, 10vw, 200px);
-    background-color: rgb(36, 36, 36);
     margin-bottom: 1px;
+    background-color: rgb(42, 42, 42);
 }
 
 .darkOverlay {
