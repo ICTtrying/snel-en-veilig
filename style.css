@@ -58,11 +58,36 @@ section {
 /*derde sectie*/
 
 .section3 {
+    border-top: 1px solid gray;
     padding-top: clamp(50px, 7vw, 90px);
     padding-left: clamp(4px, 10vw, 200px);
     padding-right: clamp(4px, 10vw, 200px);
     margin-bottom: 1px;
     background-color: rgb(42, 42, 42);
+}
+
+/*vierde sectie*/
+
+
+.section4 {
+    border-top: 3px solid rgb(38, 102, 161);
+    border-bottom: 3px solid rgb(38, 102, 161);
+    padding-top: clamp(50px, 7vw, 90px);
+    padding-left: clamp(4px, 10vw, 200px);
+    padding-right: clamp(4px, 10vw, 200px);
+    padding-bottom: clamp(50px, 7vw, 90px);
+}
+
+.section4 h2 {
+    font-weight: bolder;
+    font-size: clamp(2rem, 6vw, 50px);
+    margin-bottom: 40px;
+}
+
+.section4 p {
+    font-weight: 300;
+    font-size: clamp(12px, 6vw, 20px);
+    margin-bottom: 40px;
 }
 
 .darkOverlay {
