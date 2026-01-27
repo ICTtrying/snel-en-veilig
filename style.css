@@ -114,24 +114,38 @@ section {
     text-decoration: none;
 }
 
-.card-body div {
-    background-color: #00074b;
-    font-size: larger;
-    border-radius: 5px;
-    padding: 8px;
+.icon-wrapper {
+    height: 120px;
 }
 
-.card-pakket-type {
-    font-size: larger;
+.card-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card-info {
+    background-color: #00074b;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
 
 .card-title {
-    font-size: 40px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.card-pakket-type {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
 .card-price {
-    font-size: 60px;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.check-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: #90ee90;
 }
 
 .hidden {
