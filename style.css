@@ -1,4 +1,9 @@
-.container1 {
+section {
+    position: relative;
+    height: 100vh;
+}
+
+.section1 {
     height: 100vh;
     width: 100%;
     background-image: url('auto.jpg');
@@ -6,9 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: -60px;
 }
 
 .darkOverlay {
@@ -56,6 +59,25 @@
 
 .linkButton:hover {
     background: #005be3;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-80%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
 
 @media (max-width: 768px) {
