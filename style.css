@@ -29,5 +29,15 @@
     transform: translate(-50%, -50%);
     margin: 0 auto;
     text-align: center;
+}
 
+.tekstContainerDarkOverlay h1 {
+    font-weight: bolder;
+}
+
+nav img {
+    height: clamp(25px, 6vw, 50px);
+    width: 20%;
+    max-width: 160px;
+    min-width: 100px;
 }
