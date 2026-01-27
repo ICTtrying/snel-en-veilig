@@ -11,6 +11,18 @@ section {
     background-repeat: no-repeat;
 }
 
+.section2 {
+    padding-top: clamp(30px, 7vw, 70px);
+    padding-left: clamp(20px, 20vw, 400px);
+    padding-right: clamp(20px, 20vw, 400px);
+}
+
+.section2 h2 {
+    font-weight: bolder;
+    font-size: clamp(2rem, 6vw, 50px);
+    margin-bottom: 40px;
+}
+
 .darkOverlay {
     position: absolute;
     top: 0;
@@ -57,12 +69,14 @@ section {
 
 .linkButton:hover {
     background: linear-gradient(45deg, #003e9b, #027708);
+    color: white;
+    text-decoration: none;
 }
 
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transition: all 1s;
+    transition: all 0.8s;
     transform: translateX(-80%);
 }
 
