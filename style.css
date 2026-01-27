@@ -33,6 +33,7 @@
 
 .tekstContainerDarkOverlay h1 {
     font-weight: bolder;
+    font-size: 60px;
 }
 
 .linkButton {
@@ -63,7 +64,7 @@
         font-size: 1.1em;
     }
     .tekstContainerDarkOverlay h1 {
-        font-size: 1.5em;
+        font-size: 45px;
     }
 }
 
@@ -73,7 +74,7 @@
         font-size: 1.1em;
     }
     .tekstContainerDarkOverlay h1 {
-        font-size: 1.5em;
+        font-size: 40px;
     }
 
     nav img {
