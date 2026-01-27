@@ -114,6 +114,26 @@ section {
     text-decoration: none;
 }
 
+.card-body div {
+    background-color: #00074b;
+    font-size: larger;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.card-pakket-type {
+    font-size: larger;
+}
+
+.card-title {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-price {
+    font-size: 60px;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(2px);
