@@ -13,8 +13,8 @@ section {
 
 .section2 {
     padding-top: clamp(50px, 7vw, 90px);
-    padding-left: clamp(10px, 20vw, 400px);
-    padding-right: clamp(10px, 20vw, 400px);
+    padding-left: clamp(4px, 10vw, 200px);
+    padding-right: clamp(4px, 10vw, 200px);
 }
 
 .section2 small {
