@@ -4,6 +4,10 @@ body {
     background-color: rgb(36, 36, 36);
 }
 
+hr {
+    border-top: 1px solid #dee2e6;
+}
+
 .topbar {
     height: auto;
     padding: 5px;
@@ -212,6 +216,17 @@ section {
 .card-animate3.show {
     transform: translateX(0) scale(1);
     transition: all 1.5s ease-out;
+}
+
+.persoonlijke-afspraak-card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #b8b8b8;
+    bottom: 10px;
 }
 
 
