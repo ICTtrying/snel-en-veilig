@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     background-color: rgb(36, 36, 36);
 }
+
 .topbar {
     height: auto;
     padding: 5px;
@@ -161,6 +162,34 @@ section {
     transform: translateX(0%);
 }
 
+.card-animate {
+    transform: translateX(100%) scale(0.95);
+}
+
+.card-animate.show {
+    transform: translateX(0) scale(1);
+    transition: all 0.5s ease-out;
+}
+
+.card-animate2 {
+    transform: translateX(100%) scale(0.95);
+}
+
+.card-animate2.show {
+    transform: translateX(0) scale(1);
+    transition: all 1s ease-out;
+}
+
+.card-animate3 {
+    transform: translateX(100%) scale(0.95);
+}
+
+.card-animate3.show {
+    transform: translateX(0) scale(1);
+    transition: all 1.5s ease-out;
+}
+
+
 @media (max-width: 768px) {
     .tekstContainerDarkOverlay {
         width: 90%;
@@ -180,6 +209,33 @@ section {
     .topbar span {
         display: block;
         list-style: circle;
+    }
+
+    .card-animate {
+        transform: scale(0.5);
+    }
+
+    .card-animate.show {
+        transform: scale(1);
+        transition: all 0.5s ease-out;
+    }
+
+    .card-animate2 {
+        transform: scale(0.5);
+    }
+
+    .card-animate2.show {
+        transform: scale(1);
+        transition: all 0.5s ease-out;
+    }
+
+    .card-animate3 {
+        transform: scale(0.5);
+    }
+
+    .card-animate3.show {
+        transform: scale(1);
+        transition: all 0.5s ease-out;
     }
 }
 
