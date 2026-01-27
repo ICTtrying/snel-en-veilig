@@ -12,14 +12,24 @@ section {
 }
 
 .section2 {
-    padding-top: clamp(30px, 7vw, 70px);
-    padding-left: clamp(20px, 20vw, 400px);
-    padding-right: clamp(20px, 20vw, 400px);
+    padding-top: clamp(50px, 7vw, 90px);
+    padding-left: clamp(10px, 20vw, 400px);
+    padding-right: clamp(10px, 20vw, 400px);
+}
+
+.section2 small {
+    color: rgb(170, 221, 255);
 }
 
 .section2 h2 {
     font-weight: bolder;
     font-size: clamp(2rem, 6vw, 50px);
+    margin-bottom: 40px;
+}
+
+.section2 p {
+    font-weight: 300;
+    font-size: clamp(12px, 6vw, 20px);
     margin-bottom: 40px;
 }
 
