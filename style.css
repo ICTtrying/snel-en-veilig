@@ -35,6 +35,28 @@
     font-weight: bolder;
 }
 
+.linkButton {
+    display: inline-block;
+    padding: 0.75em 2em;
+    color: #fff;
+    background: linear-gradient(45deg, #357be5, #39a83f);
+    white-space: nowrap;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.2s;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.15);
+}
+
+.linkButton:hover {
+    background: #005be3;
+}
+
 @media (max-width: 768px) {
     .tekstContainerDarkOverlay {
         width: 90%;
@@ -42,14 +64,6 @@
     }
     .tekstContainerDarkOverlay h1 {
         font-size: 1.5em;
-    }
-
-    nav img {
-        max-width: 100%;
-        height: auto;
-        width: 150px;
-        height: 50px;
-        display: block;
     }
 }
 
@@ -68,6 +82,10 @@
         width: 130px;
         height: 40px;
         display: block;
+    }
+
+    .linkButton {
+        padding: 0.25em 1em;
     }
 }
 
