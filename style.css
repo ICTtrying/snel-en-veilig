@@ -1,7 +1,25 @@
+/*topbar*/
+body {
+    overflow-x: hidden;
+}
+.topbar {
+    height: auto;
+    padding: 5px;
+    background: #0f88ad;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
 section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
+
+/*eerste sectie*/
 
 .section1 {
     height: 100vh;
@@ -11,10 +29,12 @@ section {
     background-repeat: no-repeat;
 }
 
+/*tweede sectie*/
 .section2 {
     padding-top: clamp(50px, 7vw, 90px);
     padding-left: clamp(4px, 10vw, 200px);
     padding-right: clamp(4px, 10vw, 200px);
+    padding-bottom: clamp(50px, 7vw, 90px);
 }
 
 .section2 small {
@@ -31,6 +51,16 @@ section {
     font-weight: 300;
     font-size: clamp(12px, 6vw, 20px);
     margin-bottom: 40px;
+}
+
+/*derde sectie*/
+
+.section3 {
+    padding-top: clamp(50px, 7vw, 90px);
+    padding-left: clamp(4px, 10vw, 200px);
+    padding-right: clamp(4px, 10vw, 200px);
+    background-color: rgb(36, 36, 36);
+    margin-bottom: 1px;
 }
 
 .darkOverlay {
@@ -74,7 +104,7 @@ section {
     overflow: hidden;
     transition: background 0.2s;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(229,57,53,0.15);
+    box-shadow: 0 2px 8px rgba(229, 57, 53, 0.15);
 }
 
 .linkButton:hover {
@@ -101,8 +131,20 @@ section {
         width: 90%;
         font-size: 1.1em;
     }
+
     .tekstContainerDarkOverlay h1 {
         font-size: 60px;
+    }
+
+    .topbar ul {
+        display: flex;
+        list-style: circle;
+        font-size: small;
+    }
+
+    .topbar span {
+        display: block;
+        list-style: circle;
     }
 }
 
@@ -111,6 +153,7 @@ section {
         width: 90%;
         font-size: 1.1em;
     }
+
     .tekstContainerDarkOverlay h1 {
         font-size: 50px;
     }
@@ -127,4 +170,3 @@ section {
         padding: 0.25em 1em;
     }
 }
-
