@@ -1,4 +1,4 @@
-/*topbar*/
+/*toepasbare styling:*/
 body {
     overflow-x: hidden;
     background-color: rgb(36, 36, 36);
@@ -9,17 +9,6 @@ hr {
     border-top: 1px solid #dee2e6;
 }
 
-.topbar {
-    height: auto;
-    padding: 5px;
-    background-color: #0f88ad;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-}
-
 .big-title {
     font-size: 70px;
     font-weight: bolder;
@@ -28,75 +17,20 @@ hr {
 
 section {
     position: relative;
+    min-height: 100vh;
 }
 
-/*eerste sectie*/
-
-.section1 {
-    height: 100vh;
-    background-image: url('images/autoWiel.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+footer {
+    position: relative;
+    z-index: 2;
 }
 
-/*tweede sectie*/
-.section2 {
+
+.clamp-padding-section {
     padding-top: clamp(50px, 7vw, 90px);
     padding-left: clamp(4px, 10vw, 200px);
     padding-right: clamp(4px, 10vw, 200px);
     padding-bottom: clamp(50px, 7vw, 90px);
-}
-
-.section2 small {
-    color: rgb(170, 221, 255);
-}
-
-.section2 h2 {
-    font-weight: bolder;
-    font-size: clamp(2rem, 6vw, 50px);
-    margin-bottom: 40px;
-}
-
-.section2 p {
-    font-weight: 300;
-    font-size: clamp(12px, 6vw, 20px);
-    margin-bottom: 40px;
-}
-
-/*derde sectie*/
-
-.section3 {
-    border-top: 1px solid gray;
-    padding-top: clamp(50px, 7vw, 90px);
-    padding-left: clamp(4px, 10vw, 200px);
-    padding-right: clamp(4px, 10vw, 200px);
-    margin-bottom: 1px;
-    background-color: rgb(42, 42, 42);
-}
-
-/*vierde sectie*/
-
-
-.section4 {
-    border-top: 3px solid rgb(38, 102, 161);
-    border-bottom: 3px solid rgb(38, 102, 161);
-    padding-top: clamp(50px, 7vw, 90px);
-    padding-left: clamp(4px, 10vw, 200px);
-    padding-right: clamp(4px, 10vw, 200px);
-    padding-bottom: clamp(50px, 7vw, 90px);
-}
-
-.section4 h2 {
-    font-weight: bolder;
-    font-size: clamp(2rem, 6vw, 50px);
-    margin-bottom: 40px;
-}
-
-.section4 p {
-    font-weight: 300;
-    font-size: clamp(12px, 6vw, 20px);
-    margin-bottom: 40px;
 }
 
 .darkOverlay {
@@ -120,10 +54,7 @@ section {
     z-index: 2;
 }
 
-.tekstContainerDarkOverlay h1 {
-    font-weight: bolder;
-    font-size: 70px;
-}
+/*knopje*/
 
 .linkButton {
     display: inline-block;
@@ -149,39 +80,7 @@ section {
     text-decoration: none;
 }
 
-.icon-wrapper {
-    height: 120px;
-}
-
-.card-icon {
-    width: 4rem;
-    height: 4rem;
-}
-
-.card-info {
-    background-color: #00074b;
-    border-radius: 5px;
-    padding: 0.5rem;
-}
-
-.card-title {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card-pakket-type {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-}
-
-.card-price {
-    font-size: clamp(1.8rem, 5vw, 3rem);
-}
-
-.check-icon {
-    width: 1.25rem;
-    height: 1.25rem;
-    fill: #90ee90;
-}
+/*animaties*/
 
 .slide-left-animate {
     opacity: 0;
@@ -243,6 +142,104 @@ section {
     transition: all 0.7s ease-out;
 }
 
+/*index pagina*/
+
+.section1 {
+    height: 100vh;
+    background-image: url('images/autoWiel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*tweede sectie*/
+
+.section2 small {
+    color: rgb(170, 221, 255);
+}
+
+.section2 h2 {
+    font-weight: bolder;
+    font-size: clamp(2rem, 6vw, 50px);
+    margin-bottom: 40px;
+}
+
+.section2 p {
+    font-weight: 300;
+    font-size: clamp(12px, 6vw, 20px);
+    margin-bottom: 40px;
+}
+
+/*derde sectie*/
+
+.section3 {
+    border-top: 1px solid gray;
+    padding-top: clamp(50px, 7vw, 90px);
+    padding-left: clamp(4px, 10vw, 200px);
+    padding-right: clamp(4px, 10vw, 200px);
+    margin-bottom: 1px;
+    background-color: rgb(42, 42, 42);
+}
+
+/*vierde sectie*/
+
+
+.section4 {
+    border-top: 3px solid rgb(38, 102, 161);
+    border-bottom: 3px solid rgb(38, 102, 161);
+}
+
+.section4 h2 {
+    font-weight: bolder;
+    font-size: clamp(2rem, 6vw, 50px);
+    margin-bottom: 40px;
+}
+
+.section4 p {
+    font-weight: 300;
+    font-size: clamp(12px, 6vw, 20px);
+    margin-bottom: 40px;
+}
+
+.tekstContainerDarkOverlay h1 {
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.icon-wrapper {
+    height: 120px;
+}
+
+.card-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card-info {
+    background-color: #00074b;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.card-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-pakket-type {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+.card-price {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+.check-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: #90ee90;
+}
+
 .persoonlijke-afspraak-card::after {
     content: '';
     display: block;
@@ -268,7 +265,6 @@ section {
 }
 
 /*overOns html css*/
-
 
 .darkOverlay-overons {
     position: absolute;

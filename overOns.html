@@ -11,19 +11,31 @@
 </head>
 
 <body class="bg-dark text-white">
-
-    <!-- <div class="topbar">
-        <span class="mr-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
-                viewBox="0 0 16 16">
-                <path
-                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-            </svg>
-            <b>Omgeving:</b>
-            <span>Amsterdam, Amstelveen, Hoofddorp, Nieuw-Vennep, Haarlem, zandvoort</span>
-        </span>
-    </div> -->
+    <div
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; overflow: hidden;">
+        <svg width="100%" height="100%" viewBox="0 0 1920 1080" preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg" style="width:100vw; height:100vh;">
+            <defs>
+                <linearGradient id="bg-gradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#0d1b2a" />
+                    <stop offset="100%" stop-color="#274472" />
+                </linearGradient>
+                <radialGradient id="radial1" cx="80%" cy="10%" r="80%">
+                    <stop offset="0%" stop-color="#00b4d8" stop-opacity="0.25" />
+                    <stop offset="100%" stop-color="#0d1b2a" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="radial2" cx="20%" cy="80%" r="70%">
+                    <stop offset="0%" stop-color="#90e0ef" stop-opacity="0.18" />
+                    <stop offset="100%" stop-color="#0d1b2a" stop-opacity="0" />
+                </radialGradient>
+            </defs>
+            <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+            <ellipse cx="1700" cy="200" rx="600" ry="300" fill="url(#radial1)" />
+            <ellipse cx="400" cy="900" rx="500" ry="250" fill="url(#radial2)" />
+            <path d="M0,900 Q600,800 1200,1000 T1920,900 L1920,1080 L0,1080 Z" fill="#1b263b" fill-opacity="0.18" />
+            <path d="M0,200 Q800,100 1920,300 L1920,0 L0,0 Z" fill="#1b263b" fill-opacity="0.12" />
+        </svg>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary">
         <img src="images/logo.jpg" alt="logo" width="200" height="55">
@@ -58,12 +70,13 @@
                 Enthousiast team, veilig en met plezier naar succes!</p>
             <br>
             <p>
-            bel naar: <a href="tel:+31619666642"
-                style="white-space: nowrap; color: rgb(0, 140, 255); text-decoration: none;"><b>+31 6 19666642</b></a>
-            <br>
-            <span>of email naar: <a href="mailto:info@rijschoolsnelenveilig.nl"
-                    style="color: rgb(0, 140, 255); text-decoration: none;">info@rijschoolsnelenveilig.nl</a></span>
-        </p>
+                bel naar: <a href="tel:+31619666642"
+                    style="white-space: nowrap; color: rgb(0, 140, 255); text-decoration: none;"><b>+31 6
+                        19666642</b></a>
+                <br>
+                <span>of email naar: <a href="mailto:info@rijschoolsnelenveilig.nl"
+                        style="color: rgb(0, 140, 255); text-decoration: none;">info@rijschoolsnelenveilig.nl</a></span>
+            </p>
         </span>
 
         <div class="splitImageContainer">
@@ -72,23 +85,64 @@
         </div>
     </section>
 
-    <div class="section2 Scale-animate hidden">
-        <h2>Jouw rijschool voor veilig en snel succes.</h2>
-        <small class="mt-3">Over ons</small>
-        <hr>
-        <br>
-        <p>
-            Rijschool Snel & Veilig biedt persoonlijke rijlessen op maat, gegeven door deskundige instructeurs. Wij staan voor veiligheid, betrouwbaarheid en plezier, zodat jij vol vertrouwen en goed voorbereid de weg op kunt.
-        </p>
+    <section class="section2 bg-dark clamp-padding-section">
+        <div class="Scale-animate hidden">
+            <h2>Jouw rijschool voor veilig en snel succes.</h2>
+            <small class="mt-3">Over ons</small>
+            <hr>
+            <br>
+            <p>
+                Rijschool Snel & Veilig biedt persoonlijke rijlessen op maat, gegeven door deskundige instructeurs. Wij
+                staan voor veiligheid, betrouwbaarheid en plezier, zodat jij vol vertrouwen en goed voorbereid de weg op
+                kunt.
+            </p>
 
-        <p>
-            vragen? bel naar: <a href="tel:+31619666642"
-                style="white-space: nowrap; color: rgb(0, 140, 255); text-decoration: none;"><b>+31 6 19666642</b></a>
-        </p>
+            <p>
+                vragen? bel naar: <a href="tel:+31619666642"
+                    style="white-space: nowrap; color: rgb(0, 140, 255); text-decoration: none;"><b>+31 6
+                        19666642</b></a>
+            </p>
 
-        <a href="Pakketten.html" class="linkButton" role="button">Zie pakketten</a>
-    </div>
-    
+            <a href="Pakketten.html" class="linkButton" role="button">Zie pakketten</a>
+        </div>
+    </section>
+
+    <section class="section2 clamp-padding-section">
+        <h2 class="text-center">Wat klanten over ons denken:</h2>
+        <div class="row justify-content-center align-items-center g-3" style="color: black;">
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4 card-animate hidden">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/leerlingen/leerling1.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Allisha</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4 card-animate2 hidden">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/leerlingen/leerling2.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Achraf</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4 card-animate3 hidden">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/leerlingen/leerling3.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bolder">Sequincio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer class="bg-secondary text-light py-4 border-top border-dark">
         <div class="container">
@@ -113,6 +167,8 @@
             </div>
         </div>
     </footer>
+
+
 
 
 
