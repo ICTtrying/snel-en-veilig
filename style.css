@@ -15,6 +15,10 @@ hr {
     border-top: 1px solid #dee2e6;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .big-title {
     font-size: 70px;
     font-weight: bolder;
@@ -252,7 +256,26 @@ footer {
     max-width: 350px;
 }
 
+.card-pakket-gold::after {
+    content: 'meest gekozen!';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: linear-gradient(90deg, #ffcf3f 70%, #ffe680 100%);
+        color: #001343;
+        font-weight: bold;
+        font-size: 0.8rem;
+        padding: 3px 10px;
+        border-radius: 12px 0 12px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        z-index: 3;
+        letter-spacing: 0.5px;
+        border: 2px solid #fffbe6;
+        pointer-events: none;
+}
+
 .card-pakket-gold h2 {
+    position: relative;
     color: gold;
 }
 
@@ -351,6 +374,28 @@ footer {
     border-bottom: 2px solid rgb(72, 197, 232);
     width: 100%;
     height: 600px !important;
+}
+
+.contact-formulier {
+    position: relative;
+}
+
+.contact-formulier label {
+    font-weight: bold;
+
+}
+
+.contact-formulier::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    background-color: #19d900;
+    pointer-events: none;
 }
 
 @media (max-width: 1100px) {
