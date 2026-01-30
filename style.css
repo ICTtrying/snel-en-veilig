@@ -79,6 +79,18 @@ footer {
 
 /*knopje*/
 
+.gratis-proefles-balk {
+    background: linear-gradient(45deg, #357be5, #39a83f);
+    height: auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 0px;
+}
+
+.gratis-proefles-balk a {
+    box-shadow: 0 2px 8px rgba(71, 71, 71, 0.8);
+}
+
 .linkButton {
     display: inline-block;
     padding: 0.75em 2em;
