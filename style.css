@@ -16,7 +16,7 @@ hr {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .big-title {
@@ -415,6 +415,32 @@ footer {
     z-index: -1;
     background-color: #19d900;
     pointer-events: none;
+}
+
+.proeflesInfo-contact {
+    position: relative;
+    background-color: rgb(128, 128, 128);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.proeflesInfo-contact::after {
+    content: '';
+    background-color: #007bff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: -1;
+}
+
+.proeflesInfo-contact h2 {
+    color: #ffffff;
 }
 
 @media (max-width: 1100px) {
