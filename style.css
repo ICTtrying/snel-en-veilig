@@ -4,6 +4,10 @@ body {
 }
 
 html {
+    scrollbar-gutter: stable;
+}
+
+html {
     overflow-x: hidden;
 }
 
