@@ -178,6 +178,9 @@ footer {
 
 .section2 img {
     border-radius: 20px;
+}
+
+.section2-img-home {
     width: clamp(300px, 40vw, 600px);
 }
 
