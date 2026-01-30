@@ -176,6 +176,11 @@ footer {
     margin-bottom: 40px;
 }
 
+.section2 img {
+    border-radius: 20px;
+    width: clamp(300px, 40vw, 600px);
+}
+
 /*derde sectie*/
 
 .section3 {
@@ -263,6 +268,12 @@ footer {
 }
 
 
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
 
 /*Pakketten html css*/
 
@@ -346,7 +357,9 @@ footer {
 
 
 @media (max-width: 768px) {
-
+    .section2 img {
+        display: none;
+    }
 
     .splitImageContainer {
         display: none;
