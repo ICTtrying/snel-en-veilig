@@ -212,7 +212,7 @@ footer {
     font-size: 70px;
 }
 
-.icon-wrapper {
+/* .icon-wrapper {
     height: 120px;
 }
 
@@ -236,14 +236,24 @@ footer {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
 
-.card-price {
-    font-size: clamp(1.2rem, 3vw, 2rem);
-}
-
 .check-icon {
     width: 1.25rem;
     height: 1.25rem;
     fill: #90ee90;
+} */
+
+.card-price {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: #22ff00;
+}
+
+.card-pakket {
+    background: linear-gradient(135deg, #19d900, #323232, #323232, #323232, #323232, #323232);
+}
+
+.card-pakket p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .persoonlijke-afspraak-card::after {
@@ -273,7 +283,6 @@ footer {
 /*overOns html css*/
 .card-review {
     font-family: "Georgia", serif; /* mooi font met echte quotes */
-
 }
 .card-review::after {
     content: "\201C";   /* openende dubbele quote */
