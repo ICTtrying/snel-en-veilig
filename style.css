@@ -257,7 +257,7 @@ footer {
 }
 
 .card-pakket-gold::after {
-    content: 'meest gekozen!';
+        content: 'meest gekozen!';
         position: absolute;
         top: 12px;
         left: 12px;
@@ -274,20 +274,27 @@ footer {
         pointer-events: none;
 }
 
+
 .card-pakket-gold h2 {
     position: relative;
     color: gold;
+    font-size: clamp(20px, 8vw, 35px);
 }
 
 .card-pakket-gold p {
-    font-size: 20px;
+    font-size: clamp(18px, 4vw, 22px);
     font-weight: bold;
 }
 
 
 
 .card-pakket p {
-    font-size: 20px;
+    font-size: clamp(18px, 4vw, 22px);
+    font-weight: bold;
+}
+
+.card-pakket h2 {
+    font-size: clamp(20px, 8vw, 35px);
     font-weight: bold;
 }
 
@@ -500,5 +507,14 @@ footer {
 
     .linkButton {
         padding: 0.25em 1em;
+    }
+
+    .card-pakket-gold::after {
+        top: 6px;
+        left: 6px;
+        font-size: 0.6rem;
+        padding: 2px 6px;
+        border-radius: 8px 0 8px 0;
+        border-width: 1px;
     }
 }
