@@ -1,6 +1,6 @@
 /*toepasbare styling:*/
 body {
-    background-color: rgb(36, 36, 36); 
+    background-color: rgb(36, 36, 36);
 }
 
 html {
@@ -249,7 +249,26 @@ footer {
 
 .card-pakket {
     background: linear-gradient(135deg, #19d900, #323232, #323232, #323232, #323232, #323232);
+    border-radius: 20px !important;
+    max-width: 350px;
 }
+
+.card-pakket-gold {
+    background: linear-gradient(135deg, #ffcf3f, #323232, #323232, #323232, #323232, #323232);
+    border-radius: 20px !important;
+    max-width: 350px;
+}
+
+.card-pakket-gold h2 {
+    color: gold;
+}
+
+.card-pakket-gold p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 
 .card-pakket p {
     font-size: 20px;
@@ -282,11 +301,15 @@ footer {
 
 /*overOns html css*/
 .card-review {
-    font-family: "Georgia", serif; /* mooi font met echte quotes */
+    font-family: "Georgia", serif;
+    /* mooi font met echte quotes */
 }
+
 .card-review::after {
-    content: "\201C";   /* openende dubbele quote */
-    color: #007bff;     /* blauw */
+    content: "\201C";
+    /* openende dubbele quote */
+    color: #007bff;
+    /* blauw */
     font-size: 8rem;
     position: absolute;
     right: 10px;
