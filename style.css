@@ -329,8 +329,7 @@ footer {
 
 
     .splitImageContainer {
-        visibility: hidden;
-        position: absolute;
+        display: none;
     }
 
     .darkOverlay-overons {
