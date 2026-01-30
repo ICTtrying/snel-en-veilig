@@ -31,6 +31,19 @@ footer {
     z-index: 2;
 }
 
+.rounded-4 {
+    border-radius: 20px;
+}
+.rounded-3 {
+    border-radius: 15px;
+}
+.rounded-2 {
+    border-radius: 10px;
+}
+.rounded-1 {
+    border-radius: 5px;
+}
+
 
 .clamp-padding-section {
     padding-top: clamp(50px, 7vw, 90px);
@@ -176,11 +189,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.section2 img {
-    border-radius: 20px;
-}
-
-.section2-img-home {
+.clamp-img {
     width: clamp(300px, 40vw, 600px);
 }
 
@@ -360,7 +369,7 @@ footer {
 
 
 @media (max-width: 768px) {
-    .section2 img {
+    .hide-when-small {
         display: none;
     }
 
