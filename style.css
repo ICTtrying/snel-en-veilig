@@ -3,6 +3,10 @@ body {
     background-color: rgb(36, 36, 36);
 }
 
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
 html {
     scrollbar-gutter: stable;
 }
@@ -12,7 +16,9 @@ html {
 }
 
 hr {
-    border-top: 1px solid #dee2e6;
+  border: none; /* remove any inherited borders */
+  border-top: 1px solid #dee2e6 !important;
+  opacity: 1 !important; /* make sure it’s fully visible */
 }
 
 .bold {
@@ -226,6 +232,12 @@ footer {
 
 /*vierde sectie*/
 
+.card-title-section4 {
+    font-size: clamp(20px, 2.3vw, 30px);
+    white-space: nowrap;
+    font-weight: bold;
+}
+
 
 .section4 {
     border-top: 3px solid rgb(38, 102, 161);
@@ -291,6 +303,7 @@ footer {
     position: relative;
     color: gold;
     font-size: clamp(20px, 8vw, 35px);
+    font-weight: bold;
 }
 
 .card-pakket-gold p {
@@ -308,17 +321,6 @@ footer {
 .card-pakket h2 {
     font-size: clamp(20px, 8vw, 35px);
     font-weight: bold;
-}
-
-.persoonlijke-afspraak-card::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: #b8b8b8;
-    bottom: 10px;
 }
 
 
@@ -444,13 +446,6 @@ footer {
 }
 
 @media (max-width: 1100px) {
-    .splitImageContainer {
-        width: 420px;
-    }
-
-    .splitImageContainer .split-image:nth-child(2) {
-        background-position-x: -150px;
-    }
 
     .big-title {
         font-size: 60px;
@@ -484,17 +479,6 @@ footer {
 
     .tekstContainerDarkOverlay h1 {
         font-size: 60px;
-    }
-
-    .topbar ul {
-        display: flex;
-        list-style: circle;
-        font-size: small;
-    }
-
-    .topbar span {
-        display: block;
-        list-style: circle;
     }
 
     .card-animate {
