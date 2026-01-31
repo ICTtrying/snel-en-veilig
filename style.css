@@ -16,9 +16,11 @@ html {
 }
 
 hr {
-  border: none; /* remove any inherited borders */
-  border-top: 1px solid #dee2e6 !important;
-  opacity: 1 !important; /* make sure it’s fully visible */
+    border: none;
+    /* remove any inherited borders */
+    border-top: 1px solid #dee2e6 !important;
+    opacity: 1 !important;
+    /* make sure it’s fully visible */
 }
 
 .bold {
@@ -41,15 +43,22 @@ footer {
     z-index: 2;
 }
 
+nav div {
+    padding-right: 100px;
+}
+
 .rounded-4 {
     border-radius: 20px;
 }
+
 .rounded-3 {
     border-radius: 15px;
 }
+
 .rounded-2 {
     border-radius: 10px;
 }
+
 .rounded-1 {
     border-radius: 5px;
 }
@@ -281,21 +290,21 @@ footer {
 }
 
 .card-pakket-gold::after {
-        content: 'meest gekozen!';
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        background: linear-gradient(90deg, #ffcf3f 70%, #ffe680 100%);
-        color: #001343;
-        font-weight: bold;
-        font-size: 0.8rem;
-        padding: 3px 10px;
-        border-radius: 12px 0 12px 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-        z-index: 3;
-        letter-spacing: 0.5px;
-        border: 2px solid #fffbe6;
-        pointer-events: none;
+    content: 'meest gekozen!';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: linear-gradient(90deg, #ffcf3f 70%, #ffe680 100%);
+    color: #001343;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 12px 0 12px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    z-index: 3;
+    letter-spacing: 0.5px;
+    border: 2px solid #fffbe6;
+    pointer-events: none;
 }
 
 
@@ -449,6 +458,10 @@ footer {
 
     .big-title {
         font-size: 60px;
+    }
+
+    nav div {
+        padding-right: 0px;
     }
 }
 
